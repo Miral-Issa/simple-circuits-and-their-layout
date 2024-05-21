@@ -1,0 +1,12 @@
+vdd VDD 0 dc 1.3
+va A0 0 pulse 1.3 0 1p 1p 1p 150n 300n
+vb A1 0 pulse 1.3 0 1p 1p 1p 300n 600n
+vc A2 0 pulse 1.3 0 1p 1p 1p 600n 1200n
+vd A3 0 pulse 1.3 0 1p 1p 1p 1200n 2400n
+ve A4 0 pulse 1.3 0 1p 1p 1p 2400n 4800n
+vf A5 0 pulse 1.3 0 1p 1p 1p 4800n 9600n
+vg A6 0 pulse 1.3 0 1p 1p 1p 9600n 19200n
+vh A7 0 pulse 1.3 0 1p 1p 1p 19200n 38400n
+cload out 0 200fF
+.tran 76800n
+.include D:\IC_tools\C5_model.txt.txt

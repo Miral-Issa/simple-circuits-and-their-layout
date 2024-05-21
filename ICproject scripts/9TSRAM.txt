@@ -1,0 +1,8 @@
+vdd VDD 0 dc 2.5
+vbl BL 0 pwl 0n 0 10n 0 10.001n 2.5 20n 2.5 20.001n 0 30n 0 30.001n 2.5 40n 2.5 40.001n 0 50n 0
+vblb BLB 0 pwl 0n 2.5 10n 2.5 10.001n 0 20n 0 20.001n 2.5 30n 2.5 30.001n 0 40n 0 40.001n 2.5 50n 2.5
+vrd RD 0 pwl 50n 0
+vwl WL 0 pwl 0n 2.5 30n 2.5 30.001n 0 50n 0
+cload out 0 200fF
+.tran 50n
+.include D:\IC_tools\C5_model.txt.txt
